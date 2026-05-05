@@ -1,4 +1,8 @@
 os: osx
 osx_image: xcode16.2
 language: swift
+script: xcodebuild test \
+  -project storekit-2-demo-app.xcodeproj \
+  -scheme "storekit-2-demo-app" \
+  -destination "platform=iOS Simulator,name=iPhone 16"
 
