@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "683A5685-09A8-404B-A547-B61F893157B8",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:storekit-2-demo-app.xcodeproj",
+      "identifier" : "2220521B2B4FE13100D23FDE",
+      "name" : "storekit-2-demo-app"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:storekit-2-demo-app.xcodeproj",
+        "identifier" : "D14D295F2FAA076A00C36A68",
+        "name" : "storekit-2-demo-appTests"
+      }
+    }
+  ],
+  "version" : 1
+}

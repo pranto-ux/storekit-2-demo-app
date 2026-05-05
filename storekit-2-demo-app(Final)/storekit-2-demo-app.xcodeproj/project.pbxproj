@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,16 @@
 		2220522F2B4FE34C00D23FDE /* SubscriptionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2220522E2B4FE34C00D23FDE /* SubscriptionsManager.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D14D29642FAA076A00C36A68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 222052142B4FE13100D23FDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2220521B2B4FE13100D23FDE;
+			remoteInfo = "storekit-2-demo-app";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2206B44B2B525C6C00418A24 /* EntitlementManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitlementManager.swift; sourceTree = "<group>"; };
 		2206B44D2B52B33400418A24 /* MainConfiguration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = MainConfiguration.storekit; sourceTree = "<group>"; };
@@ -25,10 +35,23 @@
 		222052252B4FE13200D23FDE /* storekit_2_demo_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = storekit_2_demo_app.entitlements; sourceTree = "<group>"; };
 		222052272B4FE13200D23FDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2220522E2B4FE34C00D23FDE /* SubscriptionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsManager.swift; sourceTree = "<group>"; };
+		D14D29602FAA076A00C36A68 /* storekit-2-demo-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "storekit-2-demo-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14D29692FAA078500C36A68 /* storekit-2-demo-app.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "storekit-2-demo-app.xctestplan"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D14D29612FAA076A00C36A68 /* storekit-2-demo-appTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "storekit-2-demo-appTests"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		222052192B4FE13100D23FDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14D295D2FAA076A00C36A68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +64,9 @@
 		222052132B4FE13100D23FDE = {
 			isa = PBXGroup;
 			children = (
+				D14D29692FAA078500C36A68 /* storekit-2-demo-app.xctestplan */,
 				2220521E2B4FE13100D23FDE /* storekit-2-demo-app */,
+				D14D29612FAA076A00C36A68 /* storekit-2-demo-appTests */,
 				2220521D2B4FE13100D23FDE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				2220521C2B4FE13100D23FDE /* storekit-2-demo-app.app */,
+				D14D29602FAA076A00C36A68 /* storekit-2-demo-appTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +123,29 @@
 			productReference = 2220521C2B4FE13100D23FDE /* storekit-2-demo-app.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D14D295F2FAA076A00C36A68 /* storekit-2-demo-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D14D29682FAA076A00C36A68 /* Build configuration list for PBXNativeTarget "storekit-2-demo-appTests" */;
+			buildPhases = (
+				D14D295C2FAA076A00C36A68 /* Sources */,
+				D14D295D2FAA076A00C36A68 /* Frameworks */,
+				D14D295E2FAA076A00C36A68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D14D29652FAA076A00C36A68 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D14D29612FAA076A00C36A68 /* storekit-2-demo-appTests */,
+			);
+			name = "storekit-2-demo-appTests";
+			packageProductDependencies = (
+			);
+			productName = "storekit-2-demo-appTests";
+			productReference = D14D29602FAA076A00C36A68 /* storekit-2-demo-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -104,11 +153,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					2220521B2B4FE13100D23FDE = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					D14D295F2FAA076A00C36A68 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 2220521B2B4FE13100D23FDE;
 					};
 				};
 			};
@@ -126,6 +179,7 @@
 			projectRoot = "";
 			targets = (
 				2220521B2B4FE13100D23FDE /* storekit-2-demo-app */,
+				D14D295F2FAA076A00C36A68 /* storekit-2-demo-appTests */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +191,13 @@
 			files = (
 				222052282B4FE13200D23FDE /* Preview Assets.xcassets in Resources */,
 				222052242B4FE13200D23FDE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14D295E2FAA076A00C36A68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +215,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D14D295C2FAA076A00C36A68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D14D29652FAA076A00C36A68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2220521B2B4FE13100D23FDE /* storekit-2-demo-app */;
+			targetProxy = D14D29642FAA076A00C36A68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		222052292B4FE13200D23FDE /* Debug */ = {
@@ -353,6 +429,47 @@
 			};
 			name = Release;
 		};
+		D14D29662FAA076A00C36A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VG74ZG4QY5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.galib.storekit-2-demo-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/storekit-2-demo-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/storekit-2-demo-app";
+			};
+			name = Debug;
+		};
+		D14D29672FAA076A00C36A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VG74ZG4QY5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.galib.storekit-2-demo-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/storekit-2-demo-app.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/storekit-2-demo-app";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -370,6 +487,15 @@
 			buildConfigurations = (
 				2220522C2B4FE13200D23FDE /* Debug */,
 				2220522D2B4FE13200D23FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D14D29682FAA076A00C36A68 /* Build configuration list for PBXNativeTarget "storekit-2-demo-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14D29662FAA076A00C36A68 /* Debug */,
+				D14D29672FAA076A00C36A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
