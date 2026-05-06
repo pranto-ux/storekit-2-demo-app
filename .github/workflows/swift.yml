@@ -22,8 +22,8 @@ jobs:
       - name: Build and Run Tests
         run: |
           xcodebuild test \
-            -workspace MyApp.xcworkspace \
-            -scheme "MyAppScheme" \
+            -project storekit-2-demo-app.xcodeproj \
+            -scheme "storekit-2-demo-app" \
             -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.2' \
             -resultBundlePath TestResults \
             CODE_SIGNING_ALLOWED=NO
