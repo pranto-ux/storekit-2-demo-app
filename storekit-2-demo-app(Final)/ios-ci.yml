@@ -1,0 +1,29 @@
+name: iOS CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    # Use macos-15 for the most up-to-date Xcode 16 support
+    runs-on: macos-15
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set Xcode Version
+        # This ensures the runner uses Xcode 16.2
+        run: sudo xcode-select -s /Applications/Xcode_16.2.app
+
+      - name: Build and Run Tests
+        run: |
+          xcodebuild test \
+            -workspace MyApp.xcworkspace \
+            -scheme "MyAppScheme" \
+            -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.2' \
+            -resultBundlePath TestResults \
+            CODE_SIGNING_ALLOWED=NO
